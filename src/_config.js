@@ -1,8 +1,8 @@
 
 export const app = {
-    title: 'Template',
+    title: 'Clash of clans',
 }
-
+   
 
 export const links = [
     {
@@ -16,3 +16,4 @@ export const links = [
         url: '/about'
     },
 ]
+
