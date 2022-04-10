@@ -5,17 +5,15 @@ const routerHistory = createWebHashHistory();
 import HomePage from './pages/home';
 import AboutPage from './pages/about';
 import NotFoundPage from './pages/404';
+import Item from './pages/_itemAlias'
 
 
 const routers = createRouter({
     history: routerHistory,
     routes: [
         {
-            // Путь (url)
             path: '/',
-            // Имя компонента (для последующего обращения к ним)
             name: 'home',
-            // Компонент который хотим отобразить
             component: HomePage
         },
         {
@@ -24,7 +22,11 @@ const routers = createRouter({
             component: AboutPage
         },
         {
-            // Обработка 404 ошибки (ловим все пути которые не совпадают с выше указанными)
+            path: '/:itemAlias',
+            name: 'itemAlias',
+            component: Item
+        },
+        {
             path: '/:CatchAll(.*)',
             name: '404',
             component: NotFoundPage

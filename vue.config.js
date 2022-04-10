@@ -5,5 +5,5 @@ module.exports = defineConfig({
   // Не подгружать файлы .map
   productionSourceMap: false,
   // Создание директории assets
-  assetsDir: 'assets'
+  assetsDir: 'assets',
 });

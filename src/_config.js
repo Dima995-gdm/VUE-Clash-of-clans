@@ -1,6 +1,6 @@
 
 export const app = {
-    title: 'Clash of clans',
+    title: 'Clash of Clans',
 }
    
 
