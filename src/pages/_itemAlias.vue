@@ -4,16 +4,7 @@
 			<img :src="item.img" :alt="item.descr" />
 			<h1 style="color: #fff" class="title">{{ item.title }}</h1>
 			<p>{{ item.descr }}</p>
-			<div class="card-stats">
-				<div
-					v-for="(stat, index) in item.info"
-					:key="index"
-					class="one-third"
-				>
-					<div class="stat-value">{{ stat.value }}</div>
-					<div class="stat">{{ stat.title }}</div>
-				</div>
-			</div>
+			<CardFooter :info="item.info"/>
 			<div>
 				<router-link to="/" class="btn btnPrimary"
 					>Back to home</router-link
@@ -25,8 +16,10 @@
 
 <script>
 import items from '@/seeders/items.js'
+import CardFooter from '@/components/UI/Card-footer'
 
 export default {
+	components: {CardFooter},
 	data() {
 		return {
 			item: null
