@@ -24,7 +24,7 @@
 <script>
 import items from '@/seeders/items.js'
 import Card from '@/components/UI/Card'
-import CardFooter from '@/components/UI/Card-footer'
+import CardFooter from '@/components/UI/CardFooter'
 
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'

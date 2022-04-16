@@ -16,7 +16,7 @@
 
 <script>
 import items from '@/seeders/items.js'
-import CardFooter from '@/components/UI/Card-footer'
+import CardFooter from '@/components/UI/CardFooter'
 
 export default {
 	components: {CardFooter},
